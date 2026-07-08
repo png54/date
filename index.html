@@ -223,11 +223,6 @@
             gap: 10px;
         }
 
-        .card-header h2 i {
-            color: #0d47a1;
-            font-size: 1.4rem;
-        }
-
         /* Restaurant name - NO EMOJIS */
         .card-header h2 .resto-name {
             color: #0a2a4a;
@@ -302,7 +297,7 @@
         .card-footer {
             padding: 14px 20px 20px 20px;
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-end;
             align-items: center;
             flex-wrap: wrap;
             gap: 10px;
@@ -335,15 +330,6 @@
 
         .btn-choice i {
             font-size: 1.1rem;
-        }
-
-        .restaurant-id {
-            font-size: 0.75rem;
-            color: #1a4f7a;
-            background: rgba(13, 71, 161, 0.06);
-            padding: 4px 14px;
-            border-radius: 40px;
-            font-weight: 600;
         }
 
         /* ---------- CONFIRMATION MESSAGE ---------- */
@@ -622,12 +608,12 @@
             </div>
         </div>
 
-        <!-- RESTAURANTS GRID - NO EMOJIS IN NAMES -->
+        <!-- RESTAURANTS GRID - NO EMOJIS ANYWHERE -->
         <div class="restaurants-grid" id="restaurantsGrid">
             <!-- 1. Cinq sens -->
             <div class="restaurant-card" data-restaurant="Cinq sens">
                 <div class="card-header">
-                    <h2><i class="fas fa-star"></i> <span class="resto-name">Cinq sens</span></h2>
+                    <h2><span class="resto-name">Cinq sens</span></h2>
                     <div style="display:flex; gap:8px; flex-wrap:wrap; align-items:center; margin-top:4px;">
                         <span class="location-tag"><i class="fas fa-map-pin"></i> Algiers</span>
                         <a href="https://www.google.com/maps/search/?api=1&query=Cinq+sens+Algiers" target="_blank" class="map-link">
@@ -642,7 +628,6 @@
                     <img src="c4.jpg" alt="c4">
                 </div>
                 <div class="card-footer">
-                    <span class="restaurant-id">#CINQ</span>
                     <button class="btn-choice" data-name="Cinq sens"><i class="fas fa-heart"></i> Choose for Date</button>
                 </div>
             </div>
@@ -650,7 +635,7 @@
             <!-- 2. YAK Steak House DZ -->
             <div class="restaurant-card" data-restaurant="YAK Steak House DZ">
                 <div class="card-header">
-                    <h2><i class="fas fa-fire"></i> <span class="resto-name">YAK Steak House DZ</span></h2>
+                    <h2><span class="resto-name">YAK Steak House DZ</span></h2>
                     <div style="display:flex; gap:8px; flex-wrap:wrap; align-items:center; margin-top:4px;">
                         <span class="location-tag"><i class="fas fa-map-pin"></i> Algiers</span>
                         <a href="https://www.google.com/maps/search/?api=1&query=YAK+Steak+House+Algiers" target="_blank" class="map-link">
@@ -665,7 +650,6 @@
                     <img src="y4.jpg" alt="y4">
                 </div>
                 <div class="card-footer">
-                    <span class="restaurant-id">#YAK</span>
                     <button class="btn-choice" data-name="YAK Steak House DZ"><i class="fas fa-heart"></i> Choose for Date</button>
                 </div>
             </div>
@@ -673,7 +657,7 @@
             <!-- 3. Dwiret El azz -->
             <div class="restaurant-card" data-restaurant="Dwiret El azz">
                 <div class="card-header">
-                    <h2><i class="fas fa-crown"></i> <span class="resto-name">Dwiret El azz</span></h2>
+                    <h2><span class="resto-name">Dwiret El azz</span></h2>
                     <div style="display:flex; gap:8px; flex-wrap:wrap; align-items:center; margin-top:4px;">
                         <span class="location-tag"><i class="fas fa-map-pin"></i> Algiers</span>
                         <a href="https://www.google.com/maps/search/?api=1&query=Dwiret+El+azz+Algiers" target="_blank" class="map-link">
@@ -688,7 +672,6 @@
                     <img src="d4.jfif" alt="d4">
                 </div>
                 <div class="card-footer">
-                    <span class="restaurant-id">#DWIR</span>
                     <button class="btn-choice" data-name="Dwiret El azz"><i class="fas fa-heart"></i> Choose for Date</button>
                 </div>
             </div>
@@ -696,7 +679,7 @@
             <!-- 4. THE HEAVEN -->
             <div class="restaurant-card" data-restaurant="THE HEAVEN">
                 <div class="card-header">
-                    <h2><i class="fas fa-cloud"></i> <span class="resto-name">THE HEAVEN</span></h2>
+                    <h2><span class="resto-name">THE HEAVEN</span></h2>
                     <div style="display:flex; gap:8px; flex-wrap:wrap; align-items:center; margin-top:4px;">
                         <span class="location-tag"><i class="fas fa-map-pin"></i> Algiers</span>
                         <a href="https://www.google.com/maps/search/?api=1&query=THE+HEAVEN+Algiers" target="_blank" class="map-link">
@@ -711,7 +694,6 @@
                     <img src="h4.jpg" alt="h4">
                 </div>
                 <div class="card-footer">
-                    <span class="restaurant-id">#HVN</span>
                     <button class="btn-choice" data-name="THE HEAVEN"><i class="fas fa-heart"></i> Choose for Date</button>
                 </div>
             </div>
